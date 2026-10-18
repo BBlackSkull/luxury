@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="es-UY">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO ===== -->
+  <title>Luxury Decor Home — Decoración premium para tu hogar · Uruguay</title>
+  <meta name="description" content="Piezas únicas de decoración premium en Uruguay: cuadros con luz LED, adornos en resina y cerámica, alfombras y relojes de pared de diseño. La elegancia está en los detalles.">
+  <meta name="theme-color" content="#1C1917">
+
+  <!-- Open Graph (EDITAR: al publicar, usar URLs absolutas del dominio final) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_UY">
+  <meta property="og:site_name" content="Luxury Decor Home">
+  <meta property="og:title" content="Luxury Decor Home — La elegancia está en los detalles">
+  <meta property="og:description" content="Cuadros LED, adornos, alfombras y relojes de pared con acabados premium. Piezas seleccionadas para transformar tus espacios en ambientes de lujo.">
+  <meta property="og:image" content="assets/img/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+  <!-- ===== Fuentes (display: swap) ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="assets/img/hero-poster.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- ===== Datos estructurados: tienda local ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Luxury Decor Home",
+    "slogan": "La elegancia está en los detalles",
+    "description": "Tienda premium de decoración para el hogar en Uruguay: cuadros con luz LED, adornos, alfombras y relojes de pared de diseño contemporáneo.",
+    "email": "luxurydecorhome@gmail.com",
+    "telephone": "+59894595028",
+    "currenciesAccepted": "UYU",
+    "address": { "@type": "PostalAddress", "addressCountry": "UY" },
+    "sameAs": ["https://www.instagram.com/luxury.decohome/"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Cursor personalizado (solo desktop) -->
+  <div class="cursor-halo" aria-hidden="true"></div>
+  <div class="cursor-punto" aria-hidden="true"></div>
+
+  <!-- ================= PRELOADER ================= -->
+  <div class="preloader" id="preloader" role="status" aria-label="Cargando Luxury Decor Home">
+    <div class="preloader-logo">
+      <picture>
+        <source srcset="assets/img/logo.webp" type="image/webp">
+        <img src="assets/img/logo.png" alt="Luxury Decor Home" width="720" height="477">
+      </picture>
+    </div>
+    <div class="preloader-linea" aria-hidden="true"><i></i></div>
+    <p class="preloader-frase">La elegancia está en los detalles</p>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="header-in">
+      <a class="header-logo" href="#inicio" aria-label="Luxury Decor Home — Inicio">
+        <picture class="logo-normal">
+          <source srcset="assets/img/logo.webp" type="image/webp">
+          <img src="assets/img/logo.png" alt="Luxury Decor Home" width="720" height="477">
+        </picture>
+        <picture class="logo-sobre-oscuro" aria-hidden="true">
+          <source srcset="assets/img/logo-claro.webp" type="image/webp">
+          <img src="assets/img/logo-claro.png" alt="" width="720" height="477">
+        </picture>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#colecciones">Colecciones</a></li>
+          <li><a href="#destacados">Destacados</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-acciones">
+        <a class="btn btn--sm btn-header-wa" href="https://wa.me/59894595028?text=Hola%20Luxury%20Decor%20Home%2C%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener">
+          Escribinos
+        </a>
+        <button class="btn-carrito" id="btnAbrirCarrito" aria-label="Abrir carrito" aria-haspopup="dialog">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 8Z"/><path d="M8.5 10V6.5a3.5 3.5 0 0 1 7 0V10"/></svg>
+          <span class="carrito-count" id="carritoCount" aria-hidden="true">0</span>
+        </button>
+        <button class="btn-burger" id="btnMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuMovil">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú móvil -->
+  <div class="menu-movil" id="menuMovil" role="dialog" aria-modal="true" aria-label="Menú" hidden>
+    <div class="menu-movil-top">
+      <picture>
+        <source srcset="assets/img/logo.webp" type="image/webp">
+        <img src="assets/img/logo.png" alt="Luxury Decor Home" width="720" height="477">
+      </picture>
+      <button class="btn-cerrar" id="btnCerrarMenu" aria-label="Cerrar menú">✕</button>
+    </div>
+    <nav aria-label="Menú móvil">
+      <ul>
+        <li><a href="#colecciones"><small>01</small> Colecciones</a></li>
+        <li><a href="#destacados"><small>02</small> Destacados</a></li>
+        <li><a href="#catalogo"><small>03</small> Catálogo</a></li>
+        <li><a href="#nosotros"><small>04</small> Nosotros</a></li>
+        <li><a href="#contacto"><small>05</small> Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="menu-movil-pie">
+      <a href="https://wa.me/59894595028" target="_blank" rel="noopener">WhatsApp · +598 94 595 028</a>
+      <a href="mailto:luxurydecorhome@gmail.com">luxurydecorhome@gmail.com</a>
+      <a href="https://www.instagram.com/luxury.decohome/" target="_blank" rel="noopener">Instagram · @luxury.decohome</a>
+    </div>
+  </div>
+
+  <main id="contenido">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio" aria-label="Presentación">
+      <div class="hero-media" aria-hidden="true">
+        <img class="hero-poster" src="assets/img/hero-poster.jpg" alt="" fetchpriority="high">
+        <!--
+          VIDEO DEL HERO ▶ Para cambiarlo, editá CONFIG.heroVideos en js/main.js
+          (acepta 1 o varios clips de Pexels; rotan con crossfade).
+          Si el video no carga, queda el poster con zoom lento (Ken Burns).
+        -->
+        <video class="hero-video" id="heroVideo" muted loop playsinline autoplay
+               preload="metadata" poster="assets/img/hero-poster.jpg" aria-hidden="true" tabindex="-1"></video>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <p class="hero-lateral" aria-hidden="true">La elegancia está en los detalles — Uruguay</p>
+
+      <div class="container hero-contenido">
+        <p class="eyebrow" data-hero>Colección FW 2026</p>
+        <h1 class="mask-title">
+          <span class="mask-line"><span>Piezas que transforman</span></span>
+          <span class="mask-line"><span>espacios en ambientes</span></span>
+          <span class="mask-line"><span><em>de lujo</em></span></span>
+        </h1>
+        <p class="hero-sub" data-hero>
+          Cuadros con luz, esculturas, alfombras y relojes de autor, seleccionados
+          uno a uno para que tu hogar respire sofisticación.
+        </p>
+        <div class="hero-ctas" data-hero>
+          <a class="btn magnetico" href="#colecciones">Explorar colección</a>
+          <a class="btn btn--outline-l magnetico" href="https://wa.me/59894595028?text=Hola%20Luxury%20Decor%20Home%2C%20quiero%20asesoramiento%20para%20decorar%20mi%20hogar." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12.04 2Zm5.8 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.3Z"/></svg>
+            Hablar por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <a class="scroll-ind" href="#colecciones" aria-label="Bajar a las colecciones">
+        Descubrir
+        <span class="linea-scroll" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ================= MARQUEE DE CONFIANZA ================= -->
+    <!-- EDITAR: confirmar textos según políticas reales (envíos, pagos, cambios) -->
+    <div class="marquee" aria-label="Beneficios">
+      <div class="marquee-track" id="marqueeTrack">
+        <span class="marquee-item"><i></i>Piezas seleccionadas una a una</span>
+        <span class="marquee-item"><i></i>Acabados premium</span>
+        <span class="marquee-item"><i></i>Atención personalizada por WhatsApp</span>
+        <span class="marquee-item"><i></i>Diseño contemporáneo</span>
+        <span class="marquee-item"><i></i>Coordinamos tu entrega</span>
+        <span class="marquee-item"><i></i>La elegancia está en los detalles</span>
+      </div>
+    </div>
+
+    <!-- ================= COLECCIONES ================= -->
+    <section class="seccion" id="colecciones" aria-labelledby="tit-colecciones">
+      <div class="container">
+        <div class="sec-head">
+          <p class="eyebrow" data-reveal>Colecciones</p>
+          <h2 class="t-display mask-title" id="tit-colecciones">
+            <span class="mask-line"><span>Cuatro universos,</span></span>
+            <span class="mask-line"><span>una misma obsesión</span></span>
+            <span class="mask-line"><span><em>por el detalle</em></span></span>
+          </h2>
+          <p data-reveal>Recorrelas y encontrá la pieza que le falta a tu espacio. Cada colección está curada a mano, en ediciones acotadas.</p>
+        </div>
+
+        <div class="bento">
+          <a class="tile t-cuadros" href="#catalogo" data-filtro="cuadros" data-reveal aria-label="Ver colección de cuadros">
+            <div class="tile-media"><img src="assets/img/col-cuadros.jpg" alt="Pared de galería con cuadros abstractos de marcos dorados" loading="lazy"></div>
+            <div class="tile-velo"></div>
+            <div class="tile-info">
+              <div>
+                <p class="tile-num">01</p>
+                <h3 class="tile-nombre">Cuadros</h3>
+                <p class="tile-cant"><span data-count-cat="cuadros">—</span> piezas · con luz LED y crystal art</p>
+              </div>
+              <span class="tile-flecha" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15m-6-7 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+
+          <a class="tile t-adornos" href="#catalogo" data-filtro="adornos" data-reveal aria-label="Ver colección de adornos">
+            <div class="tile-media"><img src="assets/img/col-adornos.jpg" alt="Cisnes de cerámica blanca y escultura dorada sobre consola de mármol" loading="lazy"></div>
+            <div class="tile-velo"></div>
+            <div class="tile-info">
+              <div>
+                <p class="tile-num">02</p>
+                <h3 class="tile-nombre">Adornos</h3>
+                <p class="tile-cant"><span data-count-cat="adornos">—</span> piezas · cerámica y resina</p>
+              </div>
+              <span class="tile-flecha" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15m-6-7 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+
+          <a class="tile t-relojes" href="#catalogo" data-filtro="relojes" data-reveal aria-label="Ver colección de relojes de pared">
+            <div class="tile-media"><img src="assets/img/col-relojes.jpg" alt="Reloj de pared tríptico abstracto en negro y dorado sobre pared de mármol" loading="lazy"></div>
+            <div class="tile-velo"></div>
+            <div class="tile-info">
+              <div>
+                <p class="tile-num">03</p>
+                <h3 class="tile-nombre">Relojes de pared</h3>
+                <p class="tile-cant"><span data-count-cat="relojes">—</span> piezas · arte abstracto</p>
+              </div>
+              <span class="tile-flecha" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15m-6-7 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+
+          <a class="tile t-alfombras" href="#catalogo" data-filtro="alfombras" data-reveal aria-label="Ver colección de alfombras">
+            <div class="tile-media"><img src="assets/img/col-alfombras.jpg" alt="Living de lujo con alfombra peluda beige de gran formato" loading="lazy"></div>
+            <div class="tile-velo"></div>
+            <div class="tile-info">
+              <div>
+                <p class="tile-num">04</p>
+                <h3 class="tile-nombre">Alfombras</h3>
+                <p class="tile-cant"><span data-count-cat="alfombras">—</span> piezas · shaggy y de diseño</p>
+              </div>
+              <span class="tile-flecha" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15m-6-7 7 7-7 7"/></svg></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PIEZAS DESTACADAS ================= -->
+    <section class="seccion bg-marmol" id="destacados" aria-labelledby="tit-destacados" style="padding-top: var(--sec-y);">
+      <div class="container dest-head" style="position:relative; z-index:1;">
+        <div class="sec-head" style="margin-bottom:0;">
+          <p class="eyebrow" data-reveal>Selección de la casa</p>
+          <h2 class="t-display mask-title" id="tit-destacados">
+            <span class="mask-line"><span>Piezas <em>destacadas</em></span></span>
+          </h2>
+        </div>
+        <div class="carr-controles" data-reveal>
+          <button class="btn-flecha" id="railPrev" aria-label="Anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12H5m6 7-7-7 7-7"/></svg>
+          </button>
+          <button class="btn-flecha" id="railNext" aria-label="Siguiente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15m-6-7 7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="rail-wrap" style="position:relative; z-index:1;">
+        <div class="rail" id="railDestacados" aria-label="Carrusel de piezas destacadas"></div>
+        <div class="rail-progreso" aria-hidden="true"><i id="railProgreso"></i></div>
+      </div>
+    </section>
+
+    <!-- ================= SPOTLIGHT LED ================= -->
+    <section class="seccion led bg-grano-osc" id="led" aria-labelledby="tit-led">
+      <div class="container" style="position:relative; z-index:1;">
+        <div class="led-grid">
+          <div class="led-intro">
+            <p class="eyebrow eyebrow--clara" data-reveal>Galería lumínica</p>
+            <h2 class="t-display t-display--claro mask-title" id="tit-led">
+              <span class="mask-line"><span>La luz que</span></span>
+              <span class="mask-line"><span><em>habita</em> tu pared</span></span>
+            </h2>
+            <p data-reveal>
+              Nuestros cuadros con luz LED en resina y diamantes no se cuelgan:
+              se encienden. De día, una obra; de noche, el alma del ambiente.
+            </p>
+            <div class="led-ambiente filete" data-reveal>
+              <img src="assets/img/led-ambiente.jpg" alt="Living en penumbra con un cuadro LED de pavo real dorado encendido sobre el sofá" loading="lazy">
+            </div>
+            <p class="led-nota" data-reveal>Acercate y encendé cada pieza</p>
+          </div>
+
+          <div class="led-lista" id="ledLista" aria-label="Cuadros con luz LED"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NOSOTROS / HISTORIA ================= -->
+    <section class="seccion bg-marmol" id="nosotros" aria-labelledby="tit-nosotros">
+      <div class="container historia-grid">
+        <div class="historia-txt">
+          <p class="eyebrow" data-reveal>Nuestra historia</p>
+          <h2 class="t-display mask-title" id="tit-nosotros">
+            <span class="mask-line"><span>Cada pieza, elegida</span></span>
+            <span class="mask-line"><span>como si fuera <em>para casa</em></span></span>
+          </h2>
+          <p data-reveal>
+            En <strong>Luxury Decor Home</strong>, cada pieza ha sido cuidadosamente
+            seleccionada para transformar sus espacios en ambientes de lujo y
+            sofisticación. Recorremos catálogos, Feria y talleres buscando objetos
+            con presencia: piezas que, al entrar a una habitación, cambian su luz.
+          </p>
+          <p data-reveal>
+            Trabajamos con diseño contemporáneo y acabados premium —resina, cerámica,
+            textiles profundos y luz cálida— en series acotadas. Porque un hogar con
+            carácter no se compra por catálogo genérico: se construye detalle a detalle.
+          </p>
+          <p class="firma" data-reveal>— Luxury Decor Home</p>
+
+          <div class="valores">
+            <article class="valor" data-reveal>
+              <span class="valor-icono" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.4 7.2 17.9l.9-5.4L4.2 8.7l5.4-.8L12 3z"/></svg>
+              </span>
+              <div>
+                <h3>Curaduría real</h3>
+                <p>Nada entra a la colección sin pasar por nuestras manos y nuestra mirada.</p>
+              </div>
+            </article>
+            <article class="valor" data-reveal>
+              <span class="valor-icono" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 3h12l3 6-9 12L3 9l3-6z"/><path d="M3 9h18M9 3l3 6 3-6M12 9v12"/></svg>
+              </span>
+              <div>
+                <h3>Acabados premium</h3>
+                <p>Materiales nobles y terminaciones que se sienten al tacto y perduran.</p>
+              </div>
+            </article>
+            <article class="valor" data-reveal>
+              <span class="valor-icono" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 20.5C7 16.5 3.5 13.2 3.5 9.3A4.8 4.8 0 0 1 12 6a4.8 4.8 0 0 1 8.5 3.3c0 3.9-3.5 7.2-8.5 11.2z"/></svg>
+              </span>
+              <div>
+                <h3>Atención cercana</h3>
+                <p>Te asesoramos por WhatsApp como en una boutique: sin apuro y a tu medida.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="historia-media" data-reveal>
+          <div class="historia-marco">
+            <div class="parallax" data-parallax-wrap>
+              <img src="assets/img/historia.jpg" alt="Rincón clásico con columna griega, jarrón escultural y pared de mármol" loading="lazy" data-parallax>
+            </div>
+          </div>
+          <div class="historia-cita" aria-hidden="true">“La elegancia está en los detalles.”</div>
+          <div class="historia-detalle">
+            <img src="assets/img/detalle-dorado.jpg" alt="Detalle de velas y bandeja dorada sobre mármol" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CATÁLOGO COMPLETO ================= -->
+    <section class="seccion" id="catalogo" aria-labelledby="tit-catalogo">
+      <div class="container">
+        <div class="sec-head sec-head--centro">
+          <p class="eyebrow eyebrow--centro" data-reveal>Catálogo</p>
+          <h2 class="t-display mask-title" id="tit-catalogo">
+            <span class="mask-line"><span>La colección <em>completa</em></span></span>
+          </h2>
+          <p data-reveal>Filtrá por categoría, buscá por nombre y ordená a tu gusto. ¿No ves el precio? Consultanos: respondemos en el momento.</p>
+        </div>
+
+        <div class="toolbar" data-reveal>
+          <div class="chips" id="chips" role="group" aria-label="Filtrar por categoría"></div>
+          <div class="toolbar-der">
+            <div class="campo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
+              <input type="search" id="buscar" placeholder="Buscar una pieza…" aria-label="Buscar productos">
+            </div>
+            <div class="select-wrap">
+              <select id="orden" aria-label="Ordenar productos">
+                <option value="relevancia">Relevancia</option>
+                <option value="precio-asc">Precio: menor a mayor</option>
+                <option value="precio-desc">Precio: mayor a menor</option>
+                <option value="nombre">Nombre A–Z</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <p class="sr-only" id="resumenResultados" aria-live="polite"></p>
+        <div class="coleccion-grid" id="gridCatalogo"></div>
+
+        <div class="sin-resultados" id="sinResultados" hidden>
+          <p class="t-display">Ninguna pieza coincide… todavía</p>
+          <p>Probá con otro término o escribinos: puede que la tengamos en camino.</p>
+          <br>
+          <a class="btn btn--outline-d" href="https://wa.me/59894595028?text=Hola%2C%20busco%20una%20pieza%20en%20particular." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CÓMO COMPRAR ================= -->
+    <section class="seccion bg-marmol" id="como-comprar" aria-labelledby="tit-pasos">
+      <div class="container" style="position:relative; z-index:1;">
+        <div class="sec-head sec-head--centro">
+          <p class="eyebrow eyebrow--centro" data-reveal>Cómo comprar</p>
+          <h2 class="t-display mask-title" id="tit-pasos">
+            <span class="mask-line"><span>Simple, como debe ser <em>el lujo</em></span></span>
+          </h2>
+        </div>
+
+        <div class="pasos" id="pasos">
+          <article class="paso" data-reveal>
+            <span class="paso-fantasma" aria-hidden="true">I</span>
+            <span class="paso-num">1</span>
+            <h3>Elegí tu pieza</h3>
+            <p>Recorré el catálogo, elegí modelo y color, y sumá tus favoritas al carrito.</p>
+          </article>
+          <article class="paso" data-reveal>
+            <span class="paso-fantasma" aria-hidden="true">II</span>
+            <span class="paso-num">2</span>
+            <h3>Confirmá por WhatsApp</h3>
+            <p>El carrito arma tu pedido automáticamente y lo enviás con un toque. Coordinamos pago y entrega. <!-- EDITAR: medios de pago aceptados --></p>
+          </article>
+          <article class="paso" data-reveal>
+            <span class="paso-fantasma" aria-hidden="true">III</span>
+            <span class="paso-num">3</span>
+            <h3>Recibila en tu hogar</h3>
+            <p>Preparamos tu pieza con cuidado y coordinamos la entrega para que llegue impecable. <!-- EDITAR: zonas y plazos de envío --></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RESEÑAS (placeholder — EDITAR con reseñas reales) ================= -->
+    <section class="seccion" id="resenas" aria-labelledby="tit-resenas">
+      <div class="container">
+        <div class="sec-head sec-head--centro">
+          <p class="eyebrow eyebrow--centro" data-reveal>Reseñas</p>
+          <h2 class="t-display mask-title" id="tit-resenas">
+            <span class="mask-line"><span>Lo que dicen <em>nuestras casas</em></span></span>
+          </h2>
+        </div>
+
+        <div class="testi-grid">
+          <figure class="testi" data-reveal>
+            <span class="comilla" aria-hidden="true">“</span>
+            <blockquote>[EDITAR: reseña real de una clienta sobre un cuadro LED o la pieza que haya comprado.]</blockquote>
+            <figcaption><strong>[EDITAR: Nombre]</strong> · [EDITAR: Ciudad]</figcaption>
+            <span class="marca-editar">Texto de ejemplo — reemplazar</span>
+          </figure>
+          <figure class="testi" data-reveal>
+            <span class="comilla" aria-hidden="true">“</span>
+            <blockquote>[EDITAR: reseña real sobre la calidad de los acabados y la atención por WhatsApp.]</blockquote>
+            <figcaption><strong>[EDITAR: Nombre]</strong> · [EDITAR: Ciudad]</figcaption>
+            <span class="marca-editar">Texto de ejemplo — reemplazar</span>
+          </figure>
+          <figure class="testi" data-reveal>
+            <span class="comilla" aria-hidden="true">“</span>
+            <blockquote>[EDITAR: reseña real sobre una alfombra o un adorno y cómo cambió el ambiente.]</blockquote>
+            <figcaption><strong>[EDITAR: Nombre]</strong> · [EDITAR: Ciudad]</figcaption>
+            <span class="marca-editar">Texto de ejemplo — reemplazar</span>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INSTAGRAM ================= -->
+    <section class="seccion" id="instagram" aria-labelledby="tit-insta" style="padding-top:0;">
+      <div class="container">
+        <div class="sec-head sec-head--centro" style="margin-bottom:40px;">
+          <p class="eyebrow eyebrow--centro" data-reveal>Comunidad</p>
+          <h2 class="t-display mask-title" id="tit-insta">
+            <span class="mask-line"><span>@luxury.<em>decohome</em></span></span>
+          </h2>
+          <p data-reveal>Novedades, ambientes reales y las piezas apenas llegan.</p>
+        </div>
+
+        <!-- EDITAR: reemplazar por fotos reales del Instagram -->
+        <div class="insta-grid" data-reveal>
+          <a class="insta-item" href="https://www.instagram.com/luxury.decohome/" target="_blank" rel="noopener" aria-label="Ver en Instagram">
+            <img src="assets/img/col-adornos.jpg" alt="Cisnes de cerámica sobre consola de mármol" loading="lazy">
+            <span class="insta-velo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg><span>Seguinos</span></span>
+          </a>
+          <a class="insta-item" href="https://www.instagram.com/luxury.decohome/" target="_blank" rel="noopener" aria-label="Ver en Instagram">
+            <img src="assets/img/led-ambiente.jpg" alt="Cuadro LED encendido en un living oscuro" loading="lazy">
+            <span class="insta-velo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg><span>Seguinos</span></span>
+          </a>
+          <a class="insta-item" href="https://www.instagram.com/luxury.decohome/" target="_blank" rel="noopener" aria-label="Ver en Instagram">
+            <img src="assets/img/detalle-dorado.jpg" alt="Velas y objetos dorados sobre mármol" loading="lazy">
+            <span class="insta-velo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg><span>Seguinos</span></span>
+          </a>
+          <a class="insta-item" href="https://www.instagram.com/luxury.decohome/" target="_blank" rel="noopener" aria-label="Ver en Instagram">
+            <img src="assets/img/col-alfombras.jpg" alt="Alfombra peluda beige en living luminoso" loading="lazy" style="object-position: 30% 70%;">
+            <span class="insta-velo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg><span>Seguinos</span></span>
+          </a>
+          <a class="insta-item" href="https://www.instagram.com/luxury.decohome/" target="_blank" rel="noopener" aria-label="Ver en Instagram">
+            <img src="assets/img/historia.jpg" alt="Columna griega con jarrón escultural" loading="lazy">
+            <span class="insta-velo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg><span>Seguinos</span></span>
+          </a>
+          <a class="insta-item" href="https://www.instagram.com/luxury.decohome/" target="_blank" rel="noopener" aria-label="Ver en Instagram">
+            <img src="assets/img/hero-poster.jpg" alt="Living premium con sillón bordó y arte dorado" loading="lazy" style="object-position: 72% 50%;">
+            <span class="insta-velo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg><span>Seguinos</span></span>
+          </a>
+        </div>
+
+        <p style="text-align:center; margin-top:36px;" data-reveal>
+          <a class="btn btn--outline-d magnetico" href="https://www.instagram.com/luxury.decohome/" target="_blank" rel="noopener">Seguinos en Instagram</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= CTA FINAL / CONTACTO ================= -->
+    <section class="seccion cta-final bg-grano-osc" id="contacto" aria-labelledby="tit-contacto">
+      <div class="container" style="position:relative; z-index:1;">
+        <div class="filete" data-reveal>
+          <picture>
+            <source srcset="assets/img/logo-claro.webp" type="image/webp">
+            <img class="cta-logo" src="assets/img/logo-claro.png" alt="Luxury Decor Home" width="720" height="477" loading="lazy">
+          </picture>
+          <h2 id="tit-contacto">Tu próximo ambiente favorito<br>empieza con <em>una pieza</em></h2>
+          <p>Escribinos y te ayudamos a elegir. Asesoramiento sin costo, como en casa.</p>
+          <a class="btn btn--dor magnetico" href="https://wa.me/59894595028?text=Hola%20Luxury%20Decor%20Home%2C%20quiero%20asesoramiento%20para%20elegir%20una%20pieza." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12.04 2Zm5.8 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.3Z"/></svg>
+            Escribir por WhatsApp
+          </a>
+          <div class="cta-datos">
+            <a href="mailto:luxurydecorhome@gmail.com">luxurydecorhome@gmail.com</a>
+            <a href="tel:+59894595028">+598 94 595 028</a>
+            <a href="https://www.instagram.com/luxury.decohome/" target="_blank" rel="noopener">@luxury.decohome</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-logo" href="#inicio" aria-label="Luxury Decor Home — Inicio">
+            <picture>
+              <source srcset="assets/img/logo-claro.webp" type="image/webp">
+              <img src="assets/img/logo-claro.png" alt="Luxury Decor Home" width="720" height="477" loading="lazy">
+            </picture>
+          </a>
+          <p class="footer-frase">La elegancia está en los detalles.</p>
+          <div class="footer-redes">
+            <a href="https://www.instagram.com/luxury.decohome/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://wa.me/59894595028" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12.04 2Zm5.8 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.3Z"/></svg>
+            </a>
+            <a href="mailto:luxurydecorhome@gmail.com" aria-label="Correo electrónico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav aria-label="Explorar">
+          <h3>Explorar</h3>
+          <ul>
+            <li><a href="#colecciones">Colecciones</a></li>
+            <li><a href="#destacados">Piezas destacadas</a></li>
+            <li><a href="#led">Galería LED</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#como-comprar">Cómo comprar</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Colecciones">
+          <h3>Colecciones</h3>
+          <ul>
+            <li><a href="#catalogo" data-filtro="cuadros">Cuadros</a></li>
+            <li><a href="#catalogo" data-filtro="adornos">Adornos</a></li>
+            <li><a href="#catalogo" data-filtro="alfombras">Alfombras</a></li>
+            <li><a href="#catalogo" data-filtro="relojes">Relojes de pared</a></li>
+            <li><a href="#catalogo" data-filtro="todas">Ver todo</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h3>Contacto</h3>
+          <ul class="footer-contacto">
+            <li><a href="https://wa.me/59894595028" target="_blank" rel="noopener">WhatsApp · +598 94 595 028</a></li>
+            <li><a href="mailto:luxurydecorhome@gmail.com">luxurydecorhome@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/luxury.decohome/" target="_blank" rel="noopener">Instagram · @luxury.decohome</a></li>
+            <li>Atención personalizada · Uruguay</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bajo">
+        <p>© 2026 Luxury Decor Home. Todos los derechos reservados.</p>
+        <p>Precios en pesos uruguayos · La compra se confirma por WhatsApp</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= CARRITO ================= -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="drawer" id="drawerCarrito" role="dialog" aria-modal="true" aria-label="Carrito de compras" hidden>
+    <div class="drawer-top">
+      <h2>Tu selección <span id="drawerCant"></span></h2>
+      <button class="btn-cerrar" id="btnCerrarCarrito" aria-label="Cerrar carrito">✕</button>
+    </div>
+
+    <div class="drawer-items" id="drawerItems"></div>
+
+    <div class="drawer-pie" id="drawerPie">
+      <div class="drawer-subtotal">
+        <span>Subtotal</span>
+        <strong id="drawerSubtotal">$ 0</strong>
+      </div>
+      <p class="drawer-nota">El envío y el pago se coordinan por WhatsApp al confirmar tu pedido.</p>
+      <button class="btn btn--bloque" id="btnFinalizar">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12.04 2Zm5.8 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.3Z"/></svg>
+        Finalizar por WhatsApp
+      </button>
+      <button class="drawer-seguir" id="btnSeguir">Seguir explorando</button>
+    </div>
+  </aside>
+
+  <!-- Toast de confirmación -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <i aria-hidden="true"></i>
+    <span id="toastTexto">Pieza agregada a tu selección</span>
+    <button id="toastVer">Ver carrito</button>
+  </div>
+
+  <!-- WhatsApp flotante -->
+  <a class="wa-float" id="waFloat" href="https://wa.me/59894595028?text=Hola%20Luxury%20Decor%20Home%2C%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12.04 2Zm5.8 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.3Z"/></svg>
+  </a>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
